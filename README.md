@@ -1,6 +1,6 @@
 # RouteTogglePlug
 
-Small plug to toggle routes based on their patch by a environment variable or app config
+Small Elixir cowboy plug to toggle routes based on their path by a environment variable or app config
 
 ## Installation
 
