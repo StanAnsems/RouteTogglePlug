@@ -9,7 +9,7 @@ The package can be installed by adding `route_toggle_plug` to your list of depen
 ```elixir
 def deps do
   [
-    {:route_toggle_plug, "~> 0.1"}
+    {:route_toggle_plug, git: "https://github.com/stanansems/RouteTogglePlug.git", tag: "0.1.2"}
   ]
 end
 ```
@@ -28,4 +28,10 @@ Configuration to add to config.exs
 ```elixir
 config :route_toggle_plug,
   docs_enabled: true
+```
+
+Configure in release.exs to use an ENV variable on runtime
+```elixir
+config :route_toggle_plug,
+  docs_enabled: System.get_env("DOCS_ENABLED")
 ```
